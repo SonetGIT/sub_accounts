@@ -1,0 +1,247 @@
+//App.js
+.appdiv {
+  background-image: url(./image/authimage.jpg);
+  background-size: 100%;
+  height: 100vh;
+}
+
+//Authentication.jsx
+$red: red;
+$color1: #086ebd;
+$colorWhite: #ffffff;
+$fontFamily: Roboto;
+// $color1: #003eff;
+
+.auth_container {
+  padding-top: 11%;
+  float: right;
+}
+.auth_box {
+  margin-left: 48%;
+  width: 350px;
+  height: 400px;
+}
+.auth_h1 {
+  color: $color1;
+  text-align: center;
+  font-size: 21;
+}
+.auth_error {
+  color: $red;
+}
+.auth_div {
+  text-align: center;
+  padding-top: 25px;
+}
+.auth_div_chekBox {
+  margin-left: 35px;
+  padding-top: 25px;
+}
+.auth_textfield {
+  width: 280px;
+}
+.auth_logPass {
+  color: $color1;
+}
+.auth_typography {
+  color: $color1;
+  font-weight: 400;
+}
+.auth_btn {
+  width: 280px;
+  color: $colorWhite;
+}
+
+//HomePage.jsx
+.homepage_div {
+  width: 100%;
+  height: 100vh;
+}
+.homepage_table {
+  font-family: $fontFamily;
+  font-size: 16;
+  width: 100%;
+  color: $colorWhite;
+  padding-left: 20px;
+  background: linear-gradient(180deg, $color1, #3f85b1, #54bcdc);
+}
+.homepage_typography {
+  color: #65c1e2;
+  text-align: left;
+  text-shadow: 1px 1px $color1;
+}
+.homepage_td {
+  text-align: right;
+}
+.homepage_div2 {
+  padding-top: 100px;
+  padding-left: 180px;
+}
+//SubAccountsList.jsx
+.subaccount_tbl {
+  color: $colorWhite;
+  font-weight: 500;
+  text-align: center;
+  border-collapse: collapse;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.subaccount_tr {
+  width: 170px;
+  background-color: #006bb3;
+  border: 2px inset #3ba6f7;
+}
+.subaccount_td {
+  width: 170px;
+  font-weight: 500;
+  padding: 3px 2px;
+  text-align: center;
+  font-family: $fontFamily;
+  border: 2px groove #54b1f8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(0deg, rgb(63, 133, 177), rgb(172, 224, 249));
+}
+.subaccount_tr_data {
+  background-color: $colorWhite;
+}
+.subaccount_td_data {
+  color: #666666;
+  text-align: center;
+  font-family: $fontFamily;
+  border: 1px groove #3ba6f7;
+}
+.subaccount_tbl_label {
+  z-index: 1;
+  width: 180%;
+  float: left;
+  height: 30px;
+  position: relative;
+  border: 2px inset #3ba6f7;
+  background: linear-gradient(180deg, #54bcdc, #3f85b1);
+
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 4px 4px 0 0;
+
+  -webkit-transform: perspective(5px) rotateX(0.97deg) translateZ(-1px);
+  transform: perspective(10px) rotateX(0.97deg) translateZ(-1px);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.subaccount_label_name {
+  width: 50%;
+  height: 30px;
+  margin-top: 1px;
+  font-family: $fontFamily;
+  font-size: large;
+  background-color: $colorWhite;
+  color: $color1;
+}
+
+//ClientCard.jsx
+.client_card_div {
+  position: absolute;
+  height: auto;
+  border: 1px solid #006bb3;
+  border-bottom: $colorWhite;
+  border-radius: 7px;
+  width: 60%;
+  font-family: $fontFamily;
+  font-size: 12;
+  background: $colorWhite;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 25%;
+  left: 20%;
+}
+.client_card_td {
+  width: 30%;
+  white-space: nowrap;
+  color: #666666;
+  text-align: left;
+  font-family: $fontFamily;
+  border: 1px groove #3ba6f7;
+}
+.client_card_td1 {
+  color: #666666;
+  text-align: center;
+  font-family: $fontFamily;
+  border: 1px groove #3ba6f7;
+}
+.client_card_tbl {
+  color: $colorWhite;
+  font-weight: 500;
+  text-align: center;
+  border-collapse: collapse;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(0deg, rgb(172, 224, 249), rgb(63, 133, 177));
+  .td {
+    width: 100%;
+    color: $colorWhite;
+    font-family: $fontFamily;
+    font-size: 19;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.client_card_div2 {
+  width: 50%;
+  margin-top: 8px;
+  position: absolute;
+  margin-left: 300px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: linear-gradient(180deg, #ace0f9, #fafafa);
+  .tbl {
+    width: 100%;
+    padding: 10px;
+    border: 1px dotted #7cbaf6;
+    border-bottom: 1px inset $colorWhite;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .tr {
+    white-space: nowrap;
+    color: $color1;
+    padding-left: 80px;
+    font-family: $fontFamily;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .tr_data {
+    color: #666666;
+    text-align: center;
+    font-family: $fontFamily;
+  }
+}
+.cl_card_tbl_lbl {
+  z-index: -1;
+  width: 180%;
+  float: left;
+  height: 30px;
+  position: relative;
+  border: 2px inset #3ba6f7;
+  background: linear-gradient(180deg, #54bcdc, #3f85b1);
+
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 4px 4px 0 0;
+
+  -webkit-transform: perspective(5px) rotateX(0.97deg) translateZ(-1px);
+  transform: perspective(15px) rotateX(0.97deg) translateZ(-1px);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.zbds_td {
+  color: #666666;
+  text-align: center;
+  font-family: $fontFamily;
+  border: 1px groove #3ba6f7;
+  font-size: 13px;
+}
