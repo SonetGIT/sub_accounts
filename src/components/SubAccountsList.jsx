@@ -1,13 +1,5 @@
 import React, { useState } from "react";
 import { Button, Grid } from "@mui/material";
-import { Paper } from "@mui/material";
-import { Table } from "@mui/material";
-import { TableHead } from "@mui/material";
-import { TableBody } from "@mui/material";
-import { TableRow } from "@mui/material";
-import { TableCell } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
-import IconButton from "@material-ui/core/IconButton";
 import Draggable from "react-draggable";
 
 import "../styles.scss";

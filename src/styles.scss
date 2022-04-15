@@ -245,3 +245,15 @@ $fontFamily: Roboto;
   border: 1px groove #3ba6f7;
   font-size: 13px;
 }
+.add_data {
+  color: $colorWhite;
+  position: absolute;
+  font-size: 22px;
+  cursor: pointer;
+}
+.remove_data {
+  color: $colorWhite;
+  font-size: 22px;
+  padding-left: 28px;
+  cursor: pointer;
+}

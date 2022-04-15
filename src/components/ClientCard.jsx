@@ -4,13 +4,17 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { Grid } from "@mui/material";
 import { MdOutlineAddCircle } from "react-icons/md";
 import { MdRemoveCircle } from "react-icons/md";
+
 import "../styles.scss";
 
 //RENDERING
 export default (props) => {
   // VARS
   const [client] = useState(props.client);
+
   //FUNC
+
+  //RENDERING
   return (
     <Draggable handle="div">
       <div className="client_card_div">
@@ -56,19 +60,10 @@ export default (props) => {
                 </td>
                 <td>
                   <MdOutlineAddCircle
-                    style={{
-                      color: "white",
-                      position: "absolute",
-                      fontSize: "22px",
-                    }}
+                    className="add_data"
+                    onClick={() => props.openSecuritiesForm(true)}
                   />
-                  <MdRemoveCircle
-                    style={{
-                      color: "white",
-                      fontSize: "22px",
-                      paddingLeft: "25px",
-                    }}
-                  />
+                  <MdRemoveCircle className="remove_data" />
                 </td>
               </tr>
               <tr className="subaccount_tr">
@@ -97,20 +92,8 @@ export default (props) => {
                   </tr>
                 </td>
                 <td>
-                  <MdOutlineAddCircle
-                    style={{
-                      color: "white",
-                      position: "absolute",
-                      fontSize: "22px",
-                    }}
-                  />
-                  <MdRemoveCircle
-                    style={{
-                      color: "white",
-                      fontSize: "22px",
-                      paddingLeft: "25px",
-                    }}
-                  />
+                  <MdOutlineAddCircle className="add_data" />
+                  <MdRemoveCircle className="remove_data" />
                 </td>
               </tr>
               <td></td>
