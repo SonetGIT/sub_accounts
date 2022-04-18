@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Draggable from "react-draggable";
-import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoCloseCircle } from "react-icons/io5";
 import { Grid } from "@mui/material";
 import { MdOutlineAddCircle } from "react-icons/md";
 import { MdRemoveCircle } from "react-icons/md";
@@ -22,10 +22,7 @@ export default (props) => {
           <tr>
             <td className="td">Карточка клиента</td>
             <td onClick={() => props.closeClientCard(client.uuid)}>
-              <IoIosCloseCircleOutline
-                size="25px"
-                style={{ color: "white", paddingTop: 2 }}
-              />
+              <IoCloseCircle className="close_btn" />
             </td>
           </tr>
         </table>

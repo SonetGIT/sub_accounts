@@ -187,6 +187,11 @@ $fontFamily: Roboto;
     font-weight: bold;
     text-align: center;
   }
+  .close_btn {
+    color: $colorWhite;
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
 .client_card_div2 {
   width: 50%;
@@ -256,4 +261,61 @@ $fontFamily: Roboto;
   font-size: 22px;
   padding-left: 28px;
   cursor: pointer;
+}
+/*Securities.jsx*/
+.secur_div {
+  top: 29%;
+  left: 33%;
+  width: 35%;
+  height: 350px;
+  position: absolute;
+  background: $colorWhite;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  // border: 1px solid red;
+
+  .secur_tbl {
+    color: $colorWhite;
+    text-align: center;
+    margin-left: 160px;
+    border-collapse: collapse;
+
+    // border: 3px solid red;
+
+    .secur_tr_lbl {
+      height: 28px;
+      width: 258%;
+      float: left;
+      border: 2px ridge #3ba6f7;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: linear-gradient(180deg, #6fc2db, #3f85b1);
+    }
+    .secur_label_name {
+      width: 50%;
+      height: 27px;
+      margin-top: 1px;
+      font-family: $fontFamily;
+      font-size: large;
+      background-color: $colorWhite;
+      color: $color1;
+    }
+    .secur_close_btn {
+      margin-left: 152px;
+      color: $colorWhite;
+      position: absolute;
+      font-size: 24px;
+      cursor: pointer;
+      // border: 1px solid red;
+    }
+    .secur_td {
+      height: 30px;
+      font-family: $fontFamily;
+      border: 1px solid #54b1f8;
+      background: linear-gradient(0deg, rgb(172, 224, 249), rgb(63, 133, 177));
+    }
+    .textField {
+      border: 1px solid #54b1f8;
+    }
+  }
 }
