@@ -80,14 +80,14 @@ export default function SubAccountsList(props) {
                   Открыть
                 </Button>
               </td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
-              <td className="subaccount_td_data">test</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
+              <td className="subaccount_td_data">test1</td>
             </tr>
           </table>
         </Grid>

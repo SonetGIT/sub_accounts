@@ -16,7 +16,7 @@ export default function Securities(props) {
                   Ценные бумаги{" "}
                   <IoCloseCircle
                     className="secur_close_btn"
-                    // onClick={() => props.openSecuritiesForm(true)}
+                    onClick={() => props.openSecuritiesForm(true)}
                   />
                 </p>
               </tr>
@@ -58,22 +58,6 @@ export default function Securities(props) {
                 }}
               >
                 Сохранить
-              </Button>
-              <Button
-                variant="contained"
-                // onClick={() => props.setShowOrderBuy(false)}
-                style={{
-                  margin: 2,
-                  height: 24,
-                  width: "80px",
-                  fontSize: 10,
-                  color: "white",
-                  backgroundColor: "#097cd5",
-                  border: "solid 1px #0000ff",
-                  fontFamily: "Roboto",
-                }}
-              >
-                Отмена
               </Button>
             </td>
           </tr>

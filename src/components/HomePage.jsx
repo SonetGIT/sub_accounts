@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { AppBar } from "@mui/material";
 import { Typography } from "@mui/material";
-import { Tooltip } from "@mui/material";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import { IoExit } from "react-icons/io5";
 
 import OperationDay from "./OperationDay.jsx";
 import OnlineTime from "./OnlineTime.jsx";
 import SubAccountsList from "./SubAccountsList.jsx";
 import ClientCard from "./ClientCard.jsx";
 import Securities from "./Securities.jsx";
+import MenuDrawer from "./MenuDrawer.jsx";
 
 import "../styles.scss";
 import { v4 as uuidv4 } from "uuid";
@@ -21,6 +21,7 @@ export default function HomePage(props) {
   const [openSecurities, setOpenSecurities] = useState(false);
 
   /***FUNC*************************************************************************/
+
   function getUUID() {
     return uuidv4();
   }
@@ -50,6 +51,7 @@ export default function HomePage(props) {
   function openSecuritiesForm() {
     setOpenSecurities(!openSecurities);
   }
+
   /***RENDERING**********************************************************************/
   return (
     <div className="homepage_div">
@@ -59,6 +61,14 @@ export default function HomePage(props) {
             <table className="homepage_table">
               <tr>
                 <td>
+                  <MenuDrawer />
+                </td>
+                <td>
+                  <Typography className="homepage_typography" variant="h4">
+                    Система субсчетов
+                  </Typography>
+                </td>
+                <td className="homepage_td">
                   {"Пользователь:" +
                     " " +
                     userProfile.lastName +
@@ -70,15 +80,8 @@ export default function HomePage(props) {
                   <OperationDay />
                   <OnlineTime />
                 </td>
-                <td>
-                  <Typography className="homepage_typography" variant="h4">
-                    Система субсчетов
-                  </Typography>
-                </td>
                 <td className="homepage_td">
-                  <Tooltip title="Выход из системы">
-                    <ExitToAppIcon onClick={() => exitSystemClick()} />
-                  </Tooltip>
+                  <IoExit size={"25"} onClick={() => exitSystemClick()} />
                 </td>
               </tr>
             </table>
@@ -98,7 +101,11 @@ export default function HomePage(props) {
           />
         ))}
       </div>
-      <div>{openSecurities === true && <Securities token={token} />}</div>
+      <div>
+        {openSecurities === true && (
+          <Securities token={token} openSecuritiesForm={openSecuritiesForm} />
+        )}
+      </div>
     </div>
   );
 }
